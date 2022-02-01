@@ -1,6 +1,6 @@
 {
-  "name": "electron-react-boilerplate",
-  "description": "A foundation for scalable desktop apps",
+  "name": "pat-gest",
+  "description": "A simple manager for patients",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
     "build:main": "cross-env NODE_ENV=production TS_NODE_TRANSPILE_ONLY=true webpack --config ./.erb/configs/webpack.config.main.prod.ts",
@@ -30,8 +30,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "PatGest",
+    "appId": "org.erb.PatGest",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -89,47 +89,31 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "paste94",
+      "repo": "paste94"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/paste94/PatGest.git"
   },
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Riccardo Pasteris",
+    "email": "riccardopasteris@gmail.com"
   },
-  "contributors": [
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
-    },
-    {
-      "name": "John Tran",
-      "email": "jptran318@gmail.com",
-      "url": "https://github.com/jooohhn"
-    }
-  ],
+  "contributors": [],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
-  },
+  "bugs": {},
   "keywords": [
     "electron",
-    "boilerplate",
+    "patients",
     "react",
-    "typescript",
-    "ts",
-    "sass",
-    "webpack",
-    "hot",
-    "reload"
+    "nutritionalist",
+    "medical",
+    "office",
+    "manage"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/paste94/PatGest#readme",
   "jest": {
     "testURL": "http://localhost/",
     "testEnvironment": "jsdom",
@@ -222,7 +206,7 @@
     "webpack": "^5.65.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1",
+    "webpack-dev-server": "^4.7.3",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
@@ -230,10 +214,14 @@
     "electron-log": "^4.4.4",
     "electron-updater": "^4.6.5",
     "history": "^5.2.0",
+    "pouchdb": "^7.2.2",
+    "pouchdb-adapter-idb": "^7.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "rxdb": "^11.5.1",
+    "rxjs": "^7.5.2"
   },
   "devEngines": {
     "node": ">=14.x",

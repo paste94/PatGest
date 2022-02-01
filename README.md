@@ -37,3 +37,5 @@ npm run package
 ## Citations
 
 [Electron React Boilerplate](https://github.com/electron-react-boilerplate)
+[Bootstrap](https://getbootstrap.com/)
+[RXDB](https://rxdb.info/)

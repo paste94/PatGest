@@ -6,6 +6,16 @@ module.exports = {
     'import/no-unresolved': 'error',
     // Since React 17 and typescript 4.1 you can safely disable the rule
     'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': 'warn',
+    'prefer-const': 'warn',
+    'import/newline-after-import': 'warn',
+    'prefer-template': 'warn',
+    'no-underscore-dangle': 'warn',
+    'spaced-comment': 'warn',
+    'import/order': 'warn',
+    '@typescript-eslint/dot-notation': 'warn',
+    'import/prefer-default-export': 'warn',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   parserOptions: {
     ecmaVersion: 2020,
